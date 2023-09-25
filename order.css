@@ -1,0 +1,59 @@
+.order-wrapper{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 8% 4%;
+    margin-top: 100px;
+}
+.order-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 24px 0;
+}
+.filter-section{
+    width: 180px
+}
+.filter-option{
+    display: flex;
+    flex-direction: column;
+}
+.option-checkbox{
+    margin: 6px 0;
+    cursor: pointer;
+}
+.option-checkbox input{
+    margin-right: 12px;
+}
+.option-option p{
+    margin:24px 0px ;
+}
+.order-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-section{
+    width: 100%;
+}
+.order-table tr{
+    vertical-align: middle;
+}
+.order-table th{
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+.order-table td{
+    background-color: #fff;
+    border-bottom: 4px solid #f6f7fb;
+    text-align: left;
+    padding: 12px 24px;
+    font-size: 14px;
+}
+
+.order-customer-name .order-date .order-time .order-status{
+    color: rgba(0,0,0,.8);
+    font-weight: 500;
+}
+.order-id .order-amount{
+    color: #8c8c8c
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Comaptiable" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kafane Project</title>
+        <link rel="stylesheet" href="./index1.css">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+        <link rel="icon" type="image/png" href="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" sizes="16X16">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+           <nav>
+            <div id="header-container">
+                <div id="logo-wrapper">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo">
+                    <p>Kafane</p>
+                </div>
+                <div id="item-wrapper">
+                    <a class="nav-item" href="./order.html">Orders</a>
+                    <a class="nav-item" href="./product.html">Products</a>
+                    <a class="nav-item" href="./users.html">Users</a>
+                </div>
+            </div>
+            <a href="#" class="logout" id="sign-out">Logout</a>
+           </nav>
+        </header>
+        <main class="main-section">
+            <div class="order-wrapper">
+                <h1>Orders</h1>
+                <div class="order-container">
+                    <div class="filter-section">
+                        <h3>Filters</h3>
+                        <div class="filter-option">
+                            <p id="table-count">count:100</p>
+                            <label class="option-checkbox">
+                                <input class="check-boxes" id="check-0" type="checkbox" name="expired "checked />Expired
+                            </label>
+                            <label class="option-checkbox">
+                                <input class="check-boxes" id="check-1" type="checkbox" name="lowStock "checked />Low Stock
+                            </label>
+
+                        </div> 
+                    </div>
+                    <div class="table-section">
+                        <table class="orders-table">
+                            <tr>
+                                <th>ID</th>
+                                <th>Product Name</th>
+                                <th>Product Brand</th>
+                                <th>Expiry Date</th>
+                                <th>Unit Price</th>
+                                <th>Stock</th>
+                            </tr>
+                            <tbody id="table-data"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./product.js"></script>
+    </body>
+</html>
